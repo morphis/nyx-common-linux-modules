@@ -21,6 +21,10 @@ PKG_CHECK_MODULES(NYX, nyx >= $NYX_REQURIED)
 AC_SUBST(NYX_CFLAGS)
 AC_SUBST(NYX_LIBS)
 
+# determine nyx module directory
+NYX_MODULE_DIR="`$PKG_CONFIG --variable=moduledir nyx`"
+AC_SUBST(NYX_MODULE_DIR)
+
 # check for debugging
 AC_ARG_ENABLE(debug,
   [  --enable-debug            Enable debug build (default=disabled)],
@@ -29,7 +33,7 @@ AC_ARG_ENABLE(debug,
 AM_CONDITIONAL( [WANT_DEBUG], [test x"$debug" = x"yes"])
 
 AC_CONFIG_FILES([
-    Makefile
+	Makefile
 ])
 AC_OUTPUT
 
@@ -43,6 +47,8 @@ echo
 echo "  debug build.............: $debug"
 echo
 echo "  prefix..................: $prefix"
+echo
+echo "  nyx module directory....: $NYX_MODULE_DIR"
 echo
 echo "------------------------------------------------------------------------"
 echo
