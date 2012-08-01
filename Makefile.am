@@ -1,6 +1,6 @@
 NULL =
 
-SUBDIRS =
+SUBDIRS = modules
 
 EXTRA_DIST = MAINTAINERS
 

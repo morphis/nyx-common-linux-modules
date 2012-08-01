@@ -34,6 +34,8 @@ AM_CONDITIONAL( [WANT_DEBUG], [test x"$debug" = x"yes"])
 
 AC_CONFIG_FILES([
 	Makefile
+	modules/Makefile
+	modules/battery/Makefile
 ])
 AC_OUTPUT
 
