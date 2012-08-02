@@ -1,0 +1,5 @@
+Nyx Common Linux Modules
+===========================================================
+
+This contains common modules which can be shared accross all devices running a std. linux
+kernel to access several hardware features with the Nyx platform portability layer.

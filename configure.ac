@@ -1,4 +1,4 @@
-AC_INIT([nyx-crespo-modules], [0.1.0], [morphis@gravedo.de], [nyx-crespo-modules])
+AC_INIT([nyx-common-linux-modules], [0.1.0], [morphis@gravedo.de], [nyx-common-linux-modules])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS(config.h)
 AM_INIT_AUTOMAKE([dist-bzip2 subdir-objects])
