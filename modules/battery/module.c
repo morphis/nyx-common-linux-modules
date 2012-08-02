@@ -20,7 +20,7 @@
 
 #include <nyx/nyx_module.h>
 
-NYX_DECLARE_MODULE(NYX_DEVICE_BATTERY, "CommonLinuxBattery")
+NYX_DECLARE_MODULE(NYX_DEVICE_BATTERY, "CommonLinux")
 
 nyx_error_t nyx_module_open (nyx_instance_t instance, nyx_device_t** device_ptr)
 {

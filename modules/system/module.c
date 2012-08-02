@@ -20,8 +20,7 @@
 
 #include <nyx/nyx_module.h>
 
-/* sleepd requires the id of the system module to be "Main" */
-NYX_DECLARE_MODULE(NYX_DEVICE_SYSTEM, "Main")
+NYX_DECLARE_MODULE(NYX_DEVICE_SYSTEM, "CommonLinux")
 
 nyx_error_t nyx_module_open (nyx_instance_t instance, nyx_device_t** device_ptr)
 {

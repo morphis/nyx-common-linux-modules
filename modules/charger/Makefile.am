@@ -6,12 +6,12 @@ DEBUG_FLAGS += -ggdb -O0 -DDEBUG
 endif
 
 modlibexecdir = $(NYX_MODULE_DIR)
-modlibexec_LTLIBRARIES = nyxCommonLinuxCharger.la
+modlibexec_LTLIBRARIES = nyxChargerCommonLinux.la
 
-nyxCommonLinuxCharger_la_SOURCES = module.c
-nyxCommonLinuxCharger_la_LIBADD = \
+nyxChargerCommonLinux_la_SOURCES = module.c
+nyxChargerCommonLinux_la_LIBADD = \
 	$(NYX_LIBS)
-nyxCommonLinuxCharger_la_CFLAGS = \
+nyxChargerCommonLinux_la_CFLAGS = \
 	$(NYX_CFLAGS) \
 	$(DEBUG_FLAGS)
-nyxCommonLinuxCharger_la_LDFLAGS = -module -avoid-version -no-undefined
+nyxChargerCommonLinux_la_LDFLAGS = -module -avoid-version -no-undefined

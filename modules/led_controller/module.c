@@ -20,8 +20,7 @@
 
 #include <nyx/nyx_module.h>
 
-/* Sleepd requires a led_controller module with "Default" as id. */
-NYX_DECLARE_MODULE(NYX_DEVICE_LED_CONTROLLER, "Default")
+NYX_DECLARE_MODULE(NYX_DEVICE_LED_CONTROLLER, "CommonLinux")
 
 nyx_error_t nyx_module_open (nyx_instance_t instance, nyx_device_t** device_ptr)
 {
