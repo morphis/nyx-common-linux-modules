@@ -36,6 +36,9 @@ AC_CONFIG_FILES([
 	Makefile
 	modules/Makefile
 	modules/battery/Makefile
+	modules/charger/Makefile
+	modules/led_controller/Makefile
+	modules/system/Makefile
 ])
 AC_OUTPUT
 
